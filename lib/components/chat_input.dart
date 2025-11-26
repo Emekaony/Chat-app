@@ -3,7 +3,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 
 class ChatInputWidget extends StatefulWidget {
-  const ChatInputWidget({super.key});
+  final Function(String) onSubmit;
+  const ChatInputWidget({super.key, required this.onSubmit});
 
   @override
   State<ChatInputWidget> createState() => _ChatInputWidgetState();
@@ -35,8 +36,8 @@ class _ChatInputWidgetState extends State<ChatInputWidget> {
               cursorColor: Colors.white,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
-                hintText: 'write...',
-                hintStyle: TextStyle(color: Colors.white54),
+                hintText: 'type a message...',
+                hintStyle: TextStyle(color: Colors.blueGrey),
                 border: InputBorder.none,
                 contentPadding: EdgeInsets.symmetric(horizontal: 8.0),
               ),
@@ -44,6 +45,8 @@ class _ChatInputWidgetState extends State<ChatInputWidget> {
           ),
           IconButton(
             onPressed: () {
+              // send the value to the parent
+              widget.onSubmit(textFieldController.text);
               log("sending ${textFieldController.text} to the backend!");
               setState(() {
                 textFieldController.text = "";
