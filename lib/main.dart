@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:simple_application/screens/chat_screen.dart';
+// import 'package:simple_application/screens/chat_screen.dart';
 import 'package:simple_application/screens/demo_screen.dart';
+import 'package:simple_application/screens/login_screen.dart';
 // import 'package:simple_application/screens/login_screen.dart';
 // import 'package:simple_application/screens/login_screen.dart';
 
@@ -13,6 +14,16 @@ class ChatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: DemoScreen());
+    return MaterialApp(
+      theme: ThemeData(
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.black,
+            foregroundColor: Colors.white,
+          ),
+        ),
+      ),
+      home: LoginScreen(),
+    );
   }
 }
