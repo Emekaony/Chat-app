@@ -1,0 +1,92 @@
+[
+    {
+        "text": "Hello there!",
+        "id": "1",
+        "createdAt": 1000,
+        "author": {
+            "name": "Alice"
+        },
+        "imageUrl": null
+    },
+    {
+        "text": "How are you?",
+        "id": "2",
+        "createdAt": 2000,
+        "author": {
+            "name": "Bob"
+        },
+        "imageUrl": null
+    },
+    {
+        "text": "I'm doing great!",
+        "id": "3",
+        "createdAt": 3000,
+        "author": {
+            "name": "Charlie"
+        },
+        "imageUrl": null
+    },
+    {
+        "text": "Thanks for asking",
+        "id": "4",
+        "createdAt": 4000,
+        "author": {
+            "name": "Diana"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "What's new?",
+        "id": "5",
+        "createdAt": 5000,
+        "author": {
+            "name": "Eve"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "Just working on some stuff",
+        "id": "6",
+        "createdAt": 6000,
+        "author": {
+            "name": "Frank"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "That sounds interesting",
+        "id": "7",
+        "createdAt": 7000,
+        "author": {
+            "name": "Grace"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "Tell me more",
+        "id": "8",
+        "createdAt": 8000,
+        "author": {
+            "name": "Henry"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "Sure, let's chat",
+        "id": "9",
+        "createdAt": 9000,
+        "author": {
+            "name": "Iris"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    },
+    {
+        "text": "Looking forward to it",
+        "id": "10",
+        "createdAt": 10000,
+        "author": {
+            "name": "Jack"
+        },
+        "imageUrl": "assets/images/silver_ball.jpg"
+    }
+]

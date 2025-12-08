@@ -15,4 +15,14 @@ class ChatMessageEntity {
     required this.createdAt,
     required this.author,
   });
+
+  factory ChatMessageEntity.fromJson(Map<String, dynamic> jsonReponse) {
+    return ChatMessageEntity(
+      text: jsonReponse["text"] as String,
+      id: jsonReponse["id"] as String,
+      createdAt: jsonReponse["createdAt"] as int,
+      author: Author.fromJson(jsonReponse["author"]),
+      imageUrl: jsonReponse["imageUrl"] as String?,
+    );
+  }
 }
